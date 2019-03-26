@@ -34,6 +34,12 @@ public class AssertTypes {
         List<String> justiceLeague = null;
         assertNull(justiceLeague);
         
+        // test to see if both are null
+        // THIS IS A CHANGE BASED ON FLUENCY REVIEW FEEDBACK
+        List<String> nullVariable = null;
+        assertEquals(justiceLeague, nullVariable);
+        
+        
         // assertNotNull example
         // adding the various members of the justice league that I could 
         // think of off hand should make the object no longer null
@@ -59,6 +65,17 @@ public class AssertTypes {
         Boolean boosterGoldCool = false;
         assertFalse(boosterGoldCool);
         
+        // Blue Beetle is also kind of lame
+        // THIS IS A CHANGE BASED ON FLUENCY REVIEW FEEDBACK
+        Boolean blueBeetleCool = false;
+        assertFalse(blueBeetleCool);
+        
+        // but at least they have each other
+        // THIS IS A CHANGE BASED ON FLUENCY REVIEW FEEDBACK
+        Boolean blueBeetleboosterGoldFriends = true;
+        assertTrue(blueBeetleboosterGoldFriends);
+        assertEquals(blueBeetleCool, boosterGoldCool);
+        
         // assertSame example
         // they got their powers from the same guy, a wizard named Shazam.
         // also, shazam was called Captain Marvel originally, despite not being
@@ -66,6 +83,10 @@ public class AssertTypes {
         String whatShazamYellsToTransform = "SHAZAM!";
         String whatBlackAdamYellsToTransform = "SHAZAM!";
         assertSame(whatShazamYellsToTransform, whatBlackAdamYellsToTransform);
+       
+        // assertEquals also works here
+        // THIS IS A CHANGE BASED ON FLUENCY REVIEW FEEDBACK
+        assertEquals(whatShazamYellsToTransform, whatBlackAdamYellsToTransform);
         
         // assertNotSame example
         // DC's Captain Marvel is now called Shazam, see above. 
