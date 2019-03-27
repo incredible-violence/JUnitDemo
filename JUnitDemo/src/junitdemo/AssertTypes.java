@@ -60,6 +60,13 @@ public class AssertTypes {
         int batmanStrength = 6;
         assertTrue(supermanStrength > batmanStrength);
         
+        // Hyperion from Marvel Comics held two universes apart with his bare hands.
+        // this particular assertEquals has a delta parameter for margin of error. 
+        // This is meant to demonstrate that for all intents and purposes, Hyperion and Superman
+        // are functionally the same, though Hyperion is probably more powerful. 
+        int hyperionStrength = 100;
+        assertEquals(supermanStrength, hyperionStrength, 50);   
+        
         // assertFalse example
         // it's true, booster gold is famous for how lame he is
         Boolean boosterGoldCool = false;
